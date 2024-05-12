@@ -156,8 +156,8 @@ The following overview shows the availability of the models in conjunction with 
 
 | Task                                          | PyTorch | Torchscript    |  Tensorflow  |
 |-----------------------------------------------|:-------:|----------------|:------------:|
-| Layout detection via Detectron2/Tensorpack    |    ✅    | ✅ (CPU only)   | ✅ (GPU only) |
-| Table recognition via Detectron2/Tensorpack   |    ✅    | ✅ (CPU only)   | ✅ (GPU only) |
+| Layout detection via Detectron2/Tensorpack    |    ✅    | ✅ (CPU only)   | ✅            |
+| Table recognition via Detectron2/Tensorpack   |    ✅    | ✅ (CPU only)   | ✅            |
 | Table transformer via Transformers            |    ✅    | ❌              |      ❌       |
 | DocTr                                         |    ✅    | ❌              |      ✅       |
 | LayoutLM (v1, v2, v3, XLM) via Transformers   |    ✅    | ❌              | ❌            |

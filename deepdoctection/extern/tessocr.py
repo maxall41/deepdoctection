@@ -25,7 +25,7 @@ from errno import ENOENT
 from itertools import groupby
 from os import environ
 from typing import Any, Dict, List, Optional, Union
-
+from skimage.transform import resize
 import numpy as np
 
 from ..utils.context import save_tmp_file, timeout_manager
@@ -318,6 +318,7 @@ class TesseractOcrDetector(ObjectDetector):
         :param np_img: image as numpy array
         :return: A list of DetectionResult
         """
+        np_img = resize(np_img,(int(np_img.shape[0] * 2),int(np_img.shape[1] * 2)))
         detection_results = predict_text(
             np_img,
             supported_languages=self.config.LANGUAGES,

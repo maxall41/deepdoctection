@@ -318,7 +318,6 @@ class TesseractOcrDetector(ObjectDetector):
         :param np_img: image as numpy array
         :return: A list of DetectionResult
         """
-        np_img = resize(np_img,(int(np_img.shape[0] * 2),int(np_img.shape[1] * 2)))
         detection_results = predict_text(
             np_img,
             supported_languages=self.config.LANGUAGES,
